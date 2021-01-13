@@ -26,6 +26,10 @@ footer {
   background-color: var(--secondary-background-color);
 }
 
+address{
+  font-style: normal;
+}
+
 
 /* Общие правила */
 .list {
@@ -37,19 +41,23 @@ footer {
 .button {
   text-decoration: none;
   border: none;
+  
 }
 .button:focus {
   border-color: var(--accent-color);
 }
 .visually-hidden {
+  /*
   position: absolute;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);  IE6, IE7 
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden;
+  overflow: hidden; 
+  */
+  display: none;
 }
 
 /* Стилизация лого */
@@ -112,8 +120,9 @@ footer {
   line-height: 1.71;
 }
 .contact-address .link {
-  color: #ffffff99;
-  
+  color: var(--primary-background-color);
+  opacity: 60%;
+
   font-size: 14px;
   line-height: 1.71;
 }
@@ -136,6 +145,9 @@ footer {
 /* Стилизация героя */
 .hero {
   background-color: var(--secondary-background-color);
+}
+.hero-title {
+  color: var(--primary-background-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -145,13 +157,11 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-title {
-  color: var(--primary-background-color);
-}
 .hero-button {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -201,6 +211,7 @@ footer {
   background-color: #f5f4fa;
   color: #212121;
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
